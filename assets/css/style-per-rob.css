@@ -3,6 +3,10 @@
 }
 
 /* HEADER styles */
+.navbar .navbar-brand img {
+	max-width: 190px;
+}
+
 nav.navbar,
 .navbar .navbar-nav li.menu-item-has-children .sub-menu {
 	background-color: #b7d4e2;
