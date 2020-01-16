@@ -2,7 +2,9 @@
 	background-color: #b7d4e2; /* light-blue */
 }
 
-nav.navbar {
+/* HEADER styles */
+nav.navbar,
+.navbar .navbar-nav li.menu-item-has-children .sub-menu {
 	background-color: #b7d4e2;
 }
 
@@ -10,7 +12,8 @@ nav.navbar,
 .navbar .menu-title,
 .navbar .navbar-nav li > a,
 .navbar .navbar-nav li > a .menu-icon,
-#main-menu .navbar-nav li > a .menu-icon {
+#main-menu .navbar-nav li > a .menu-icon,
+.navbar .navbar-nav li.menu-item-has-children .sub-menu i {
 	color: #000 !important;
 }
 
@@ -25,4 +28,8 @@ nav.navbar,
 	color: #000 !important;
 }
 
+/* CONTENT body styles */
+.navbar .navbar-nav li.menu-item-no-children.show a:before {
+	content: none;
+}
 
