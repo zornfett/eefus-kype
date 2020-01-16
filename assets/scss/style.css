@@ -1153,10 +1153,11 @@ aside.left-panel {
           -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
           position: static !important; }
 
+/* RBBed
 .navbar .navbar-nav > .active > a,
 .navbar .navbar-nav > .active > a:focus,
 .navbar .navbar-nav > .active > a:hover {
-  color: #d7d9e3 !important; }
+  color: #d7d9e3 !important; }*/
 
 .navbar-nav li span.count {
   background: #a9d86e;

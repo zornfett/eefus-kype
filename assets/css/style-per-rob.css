@@ -1,0 +1,28 @@
+#left-panel {
+	background-color: #b7d4e2; /* light-blue */
+}
+
+nav.navbar {
+	background-color: #b7d4e2;
+}
+
+nav.navbar,
+.navbar .menu-title,
+.navbar .navbar-nav li > a,
+.navbar .navbar-nav li > a .menu-icon,
+#main-menu .navbar-nav li > a .menu-icon {
+	color: #000 !important;
+}
+
+#menuToggle {
+	background-color: #fdc54e; /* Lanterman yellow */
+	color: #000 !important;
+	font-size: 1.9em !important;
+}
+
+#header .count {
+	background-color: #fdc54e !important;
+	color: #000 !important;
+}
+
+
