@@ -58,16 +58,16 @@
 						<a href="#" class="dropdown-toggle home" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-square"></i>HOME</a>
 					</li>
 					<li class="menu-item-has-children dropdown">
-						<a href="index-client.html" class="dropdown-toggle client" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-square"></i>Client (New SQL)*</a>
+						<a href="#" class="dropdown-toggle client" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-square"></i>Client (New SQL)*</a>
 						<ul class="sub-menu children dropdown-menu">
 							<li><i class="fa fa-caret-right"></i><a href="ZZZZZZ">sublink</a></li>
 						</ul>
 					</li>
 					<li class="menu-item-no-children dropdown">
-						<a href="index-todo.html" class="dropdown-toggle todo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-square"></i>To Do List*</a>
+						<a href="#" class="dropdown-toggle todo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-square"></i>To Do List*</a>
 					</li>
 					<li class="menu-item-has-children dropdown">
-						<a href="index-form-list.html" class="dropdown-toggle formlist" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-square"></i>Form List*</a>
+						<a href="#" class="dropdown-toggle formlist" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-square"></i>Form List*</a>
 						<ul class="sub-menu children dropdown-menu">
 							<li><i class="fa fa-caret-right"></i><a href="ZZZZZZ">sublink</a></li>
 						</ul>
@@ -76,7 +76,7 @@
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-square"></i>E-Forms</a>
 					</li>
 					<li class="menu-item-no-children dropdown">
-						<a href="index-reports.html" class="dropdown-toggle reports" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-square"></i>Reports*</a>
+						<a href="#" class="dropdown-toggle reports" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-square"></i>Reports*</a>
 					</li>
 					<li class="menu-item-has-children dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-square"></i>Tickler</a>
@@ -103,7 +103,7 @@
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-square"></i>My Settings</a>
 					</li>								
 					<li class="menu-item-no-children dropdown">
-						<a href="index-search.html" class="dropdown-toggle search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-square"></i>Search*</a>
+						<a href="#" class="dropdown-toggle search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-square"></i>Search*</a>
 					</li>	
 					<li class="menu-item-has-children dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-square"></i>Administration</a>
@@ -244,7 +244,7 @@
 			<div class="col-sm-4">
 				<div class="page-header float-left">
 					<div class="page-title">
-						<h1>PageTITLE</h1>
+						<h1>Home</h1>
 					</div>
 				</div>
 			</div>
@@ -277,7 +277,7 @@
 			<div class="content mt-3">
 				<div class="animated fadeIn">
 
-				TKTcontentTKTK
+				[[ homepage content ]]
 
 				</div>
 			</div>
@@ -316,6 +316,32 @@
 				scaleColors: ['#1de9b6', '#03a9f5'],
 				normalizeFunction: 'polynomial'
 			});
+
+			// temp.linkage
+			jQuery('a.home').on('click', function(){
+				event.preventDefault();
+				window.location.href = "index.html";
+			});				
+			jQuery('a.client').on('click', function(){
+				event.preventDefault();
+				window.location.href = "index-client.html";
+			});	
+			jQuery('a.formlist').on('click', function(){
+				event.preventDefault();
+				window.location.href = "index-form-list.html";
+			});	
+			jQuery('a.reports').on('click', function(){
+				event.preventDefault();
+				window.location.href = "index-reports.html";
+			});	
+			jQuery('a.search').on('click', function(){
+				event.preventDefault();
+				window.location.href = "index-search.html";
+			});	
+			jQuery('a.todo').on('click', function(){
+				event.preventDefault();
+				window.location.href = "index-todo.html";
+			});	
 		})(jQuery);
 	</script>
 

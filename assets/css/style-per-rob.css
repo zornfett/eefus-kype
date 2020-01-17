@@ -63,6 +63,13 @@ nav.navbar,
 	content: "\f138" !important;
 }
 
+#home a.home { font-weight: bold; }
+#client a.client { font-weight: bold; }
+#formlist a.formlist { font-weight: bold; }
+#reports a.reports { font-weight: bold; }
+#search a.search { font-weight: bold; }
+#todo a.todo { font-weight: bold; }
+
 #header .count {
 	background-color: #fdc54e !important;
 	color: #000 !important;
@@ -82,8 +89,16 @@ a:hover.bg-flat-color-2 {
 
 /* CONTENT body styles */
 
+h1 {
+	text-transform: uppercase;
+}
+
 .navbar .navbar-nav li .fa-square:before {
 	content: none !important;
+}
+
+#formlist .help-block {
+	font-size: 14px;
 }
 
 /*.navbar .navbar-nav li.menu-item-no-children.show a:before,
