@@ -1,5 +1,3 @@
-- Sufee code doesn't seem to include card/panel management as with lanterman.org e.g. closing card/panels, minimize, etc.
-
 - Lanterman utlizing 1.10.2 jQuery (6.5 years old / support ended for this version in 2017); updating to 2.2.4 per Sufee
 - Lanterman utlizing Normalize v1.1.3 (release DEC2013); updating to 3.0.3 per Sufee
 
@@ -12,6 +10,8 @@
 -- js/vendor/fancybox/jquery.fancybox.js
 
 - Sufee style.css: "This css file is to over write bootstrap css"
+
+- Sufee code doesn't seem to include card/panel management as with lanterman.org e.g. closing card/panels, minimize, etc.
 
 - Sufee footer?
 
