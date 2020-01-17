@@ -1,5 +1,17 @@
+/* DUMMY STYLES
+@media (max-width: 1368px) { div { outline: 2px dotted blue; } }
+@media (max-width: 1024px) { div { outline: 2px dotted green; } }
+@media (max-width: 992px) { div { outline: 2px dotted orange; } }
+@media (max-width: 575.99px) { div { outline: 2px dotted red; } }
+ */
+
 #left-panel {
 	background-color: #b7d4e2; /* light-blue */
+}
+
+.open aside.left-panel {
+    max-width: 85px;
+    width: 85px;
 }
 
 /* HEADER styles */
@@ -12,13 +24,33 @@ nav.navbar,
 	background-color: #b7d4e2;
 }
 
+.navbar .navbar-nav li > a {
+	padding: 10px 0 0 0;
+}
+
+.navbar .navbar-nav li.menu-item-has-children .sub-menu {
+	padding: 0 0 0 56px;
+}
+
+.navbar .navbar-nav li.menu-item-has-children a:before {
+	color: #00274e !important; /* Lanterman text blue */
+}
+
 nav.navbar,
 .navbar .menu-title,
 .navbar .navbar-nav li > a,
 .navbar .navbar-nav li > a .menu-icon,
 #main-menu .navbar-nav li > a .menu-icon,
-.navbar .navbar-nav li.menu-item-has-children .sub-menu i {
-	color: #000 !important;
+.navbar .navbar-nav li.menu-item-has-children .sub-menu i,
+/* hovers */
+.navbar .navbar-nav li > a:hover,
+.navbar .navbar-nav li > a:hover .menu-icon,
+#main-menu .navbar-nav li > a:hover .menu-icon {
+	color: #00274e !important;
+}
+
+ {
+	color: #999 !important;
 }
 
 #menuToggle {
@@ -27,13 +59,57 @@ nav.navbar,
 	font-size: 1.9em !important;
 }
 
+.open .menutoggle i:before {
+	content: "\f138" !important;
+}
+
 #header .count {
 	background-color: #fdc54e !important;
 	color: #000 !important;
 }
 
-/* CONTENT body styles */
-.navbar .navbar-nav li.menu-item-no-children.show a:before {
-	content: none;
+.bg-flat-color-1 {
+	color: #00274e !important;
 }
 
+.bg-flat-color-2 {
+	background-color: #fdc54e !important;
+}
+
+a:hover.bg-flat-color-2 {
+	background-color: #f8f9fa !important;
+}
+
+/* CONTENT body styles */
+
+.navbar .navbar-nav li .fa-square:before {
+	content: none !important;
+}
+
+/*.navbar .navbar-nav li.menu-item-no-children.show a:before,
+.navbar .navbar-nav li.menu-item-nas-children .fa-caret-right:before,
+.navbar .navbar-nav li.menu-item-no-children .fa-caret-right:before {
+	content: none !important;
+}*/
+
+/* Responsive Styles */
+@media (max-width: 1368px) {
+	
+}
+
+@media (max-width: 1024px) {
+	
+}
+
+@media (max-width: 992px) {
+	
+}
+
+@media (max-width: 575.99px) {
+	ul.nav.navbar-nav {
+		background-color: #fff;
+	}
+	aside.left-panel .navbar .navbar-nav li.menu-item-has-children a:before {
+		right: 20px;
+	}
+}

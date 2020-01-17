@@ -12,3 +12,5 @@
 -- js/vendor/fancybox/jquery.fancybox.js
 
 - Sufee style.css: "This css file is to over write bootstrap css"
+
+- Sufee <FOOTER>?
